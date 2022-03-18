@@ -1,0 +1,24 @@
+{
+  "name": "securityrpg-discordbot",
+  "version": "0.0.1",
+  "description": "Learn cybersecurity with an RPG! ⚔",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cybersecurity",
+    "rpg",
+    "game",
+    "discord",
+    "bot"
+  ],
+  "author": "JIRI",
+  "license": "SEE LICENSE IN \"LICENSE\"",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}
