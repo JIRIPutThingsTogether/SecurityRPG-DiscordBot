@@ -41,8 +41,7 @@ client.on('ready', () => {
             description: 'The second number.',
             required: true,
             type: DiscordJS.Constants.ApplicationCommandOptionTypes.NUMBER
-        }
-        ]
+        }]
     })
 })
 
@@ -61,6 +60,11 @@ client.on('interactionCreate', async (interaction) => {
     } else if (commandName === 'add') {
         const num1 = options.getNumber('num1')!
         const num2 = options.getNumber('num2')!
+
+        interaction.reply({
+            content: `${num1} + ${num2} = ${num1 + num2}`,
+            //ephemeral: true,
+        })
     }
 })
 
